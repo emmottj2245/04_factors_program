@@ -73,4 +73,19 @@ while keep_going == "":
     # output factors and comment 
 
     # generate heading...
-          
+    if var_to_factor == 1:
+        heading = "factor of {}".format(var_to_factor)
+
+    # output factors and comment
+    statement_generator(heading, "*")
+    print()
+    print(factor_list)
+    print(comment)
+
+    print()
+    keep_going = input("press <enter> to continue or any key to quit")
+    print()  
+
+print()
+print("thank you for using the factors calculator")
+print()
