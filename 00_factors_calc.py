@@ -33,7 +33,60 @@ def instructions():
 
 
 
-# check input is a number more than a given value 
+# check input is a number more than a given value
+#  
+def num_check (question):
+    valid = False
+    while not valid:
+
+        error = "Please enter an integer that is more than 1 and less than 200: "
+        
+
+        try:
+            
+            #ask user to enter a number
+            response = int(input(question))
+            
+            # check number is more than zero
+            if 0 < response < 201:
+                return response
+            
+            #outputs error if input is invalid
+            else:
+                print(error)
+                print() 
+
+        except ValueError:
+            print(error)
+
+def get_factor():
+     # list to hold factors
+    factors = []
+
+    # square root to factoe to find 'half way'
+    limit = int(to_factor ** 0.5)
+
+    # find factor pairs and add to list
+    for item in range (1, limit + 1):
+
+        # check factor is not 1 (unity)
+        if to_factor == 1:
+            break
+
+        # check if number is a factor
+        result = 
+        factor_1 =
+
+        # add factor to list if it is not already in there
+        if result == 0:
+
+
+        if factor_1 != item and result ==0:
+
+        # sort list 
+        factor.sort()      
+
+        return factors  
 
 
 
